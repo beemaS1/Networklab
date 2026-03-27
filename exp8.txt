@@ -1,0 +1,18 @@
+Write a shell script to check whether a given number is even or odd
+
+oddoreven.sh
+#!/bin/bash
+echo "Enter a number:"
+read num
+if [ $((num % 2)) -eq 0 ]
+then
+    echo "$num is Even"
+else
+    echo "$num is Odd"
+fi
+
+mca@MCA03:~/mca/bma/network$ chmod +x file2.sh
+mca@MCA03:~/mca/bma/network$ ./file2.sh
+Enter a number:
+12
+12 is Even
