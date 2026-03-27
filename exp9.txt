@@ -1,0 +1,21 @@
+
+Write a shell script to input three numbers and display the largest number
+largest.sh
+#!/bin/bash
+echo "Enter three numbers:"
+read a b c
+if [ $a -ge $b ] && [ $a -ge $c ]
+then
+    echo "Largest number is: $a"
+elif [ $b -ge $a ] && [ $b -ge $c ]
+then
+    echo "Largest number is: $b"
+else
+    echo "Largest number is: $c"
+fi
+
+mca@MCA03:~/mca/bma/network$ chmod +x file2.sh
+mca@MCA03:~/mca/bma/network$ ./file2.sh
+Enter three numbers:
+12 13 14
+Largest number is: 14
