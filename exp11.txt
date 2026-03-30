@@ -1,0 +1,18 @@
+Write a shell script to check whether a given number is even or odd
+
+file2.sh
+#!/bin/bash
+read -p "Enter a number: " num
+
+if (( num % 2 == 0 ))
+then
+    echo "$num is Even"
+else
+    echo "$num is Odd"
+fi
+
+
+mca@MCA03:~/mca/Anjel/network$ chmod +x file2.sh
+mca@MCA03:~/mca/Anjel/network$ ./file2.sh
+Enter a number: 23
+23 is Odd
